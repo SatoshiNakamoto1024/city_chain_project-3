@@ -27,3 +27,5 @@ RUN cargo build --release
 FROM debian:buster-slim
 COPY --from=builder /usr/src/app/target/release/global_main_chain /usr/local/bin/global_main_chain
 CMD ["/usr/local/bin/global_main_chain"]
+
+

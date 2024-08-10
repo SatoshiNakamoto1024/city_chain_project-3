@@ -17,8 +17,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # city_chain_project-2リポジトリからntruフォルダーをクローン
-RUN git clone https://github.com/SatoshiNakamoto1024/city_chain_project-2.git /usr/src/city_chain_project && \
-    cp -r /usr/src/city_chain_project/ntru /usr/src/app/ntru
+RUN git clone https://github.com/SatoshiNakamoto1024/city_chain_project-3.git /usr/src/city_chain_project-3 && \
+    cp -r /usr/src/city_chain_project-3/ntru /usr/src/app/ntru
 
 # NTRUクレートの依存関係をコピーしてビルド
 RUN cd /usr/src/app/ntru && cargo build --release

@@ -21,7 +21,7 @@ City Chain Projectは、市町村、地域、大陸、そしてグローバル�
 1. リポジトリをクローンします：
     ```bash
     git clone https://github.com/your-repo/city_chain_project.git
-    cd city_chain_project
+    cd city_chain_project-3
     ```
 
 2. Dockerを使用してプロジェクトをビルドし、起動します：

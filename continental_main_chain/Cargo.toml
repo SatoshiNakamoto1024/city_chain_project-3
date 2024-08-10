@@ -21,7 +21,7 @@ openssl-sys = "0.9"
 openssl-src = { path = "local_openssl_src" }
 
 [build]
-rustflags = ["-L", "native=D:\\city_chain_project\\OpenSSL-Win64\\lib\\VC\\x64\\MD"]
+rustflags = ["-L", "native=D:\\city_chain_project-3\\OpenSSL-Win64\\lib\\VC\\x64\\MD"]
 
 [[bin]]
 name = "continental_main_chain"

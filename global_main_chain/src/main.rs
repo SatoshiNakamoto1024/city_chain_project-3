@@ -260,10 +260,10 @@ async fn get_chain(chain: &rocket::State<Blockchain>) -> Json<Vec<Block>> {
 async fn main() {
     let chain = Arc::new(Mutex::new(Vec::<Block>::new()));
 
-    let tls_config = TlsConfig::from_paths("d:\\city_chain_project\\cert.crt", "d:\\city_chain_project\\key.pem");
+    let tls_config = TlsConfig::from_paths("d:\\city_chain_project-3\\cert.crt", "d:\\city_chain_project-3\\key.pem");
     let config = Config::figment()
-        .merge(("tls.certs", "d:\\city_chain_project\\cert.crt"))
-        .merge(("tls.key", "d:\\city_chain_project\\key.pem"));
+        .merge(("tls.certs", "d:\\city_chain_project-3\\cert.crt"))
+        .merge(("tls.key", "d:\\city_chain_project-3\\key.pem"));
 
     rocket::custom(config)
         .manage(chain)
